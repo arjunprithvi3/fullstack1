@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import NavigationBar from './Components/NavigationBar';
+import OverviewCard from './Components/OverviewCard';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-image d-flex flex-column min-vh-100">
+      <NavigationBar />
+      <div className="container mt-4">
+        <OverviewCard />
+      </div>
     </div>
   );
 }
